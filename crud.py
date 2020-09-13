@@ -13,7 +13,7 @@ class Crud(object):
             except Exception as e:
                 print('Erro ao fazer a conexão pelo crud')
                 print(e)
-            
+                
 
     #adicionar dados no banco
     def adicionarNovoUsuario(self,usuario):

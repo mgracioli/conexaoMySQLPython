@@ -15,7 +15,7 @@ class Crud(object):
                 print(e)
 
 
-    #adicionar dados no banco
+    #adiciona dados no banco
     def adicionarNovoUsuario(self,usuario):
         try:
             self.cursor.execute("INSERT INTO tabela_mysql (nome,idade) VALUES (%s,%s)", (usuario.get_nome(), usuario.get_idade(), )) #isso é p evitar SQL Injection (NUNCA USAR OS CARACTERES + E % NOS PARÂMETROS QUE SERÃO USADO NA QUERY SQL PARA EVITAR SQL INJECTION,É IMPORTANTE PRIMEIRO CONVERTER OS DADOS QUE SERÃO USADOS NA QUERY SQL EM STRING E NÃO PASSAR O DADO NO FORMATO DIGITADO PELO USUÁRIO)

@@ -1,1 +1,1 @@
-# conexaoMySQLPython
+# conexao com MySQL usando Python
